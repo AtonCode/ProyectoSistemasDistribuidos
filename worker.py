@@ -10,7 +10,7 @@ port =  sys.argv[1]
 
 context = zmq.Context()
 socket = context.socket(zmq.REP)
-socket.bind("tcp://100.96.1.18:"+port)
+socket.bind("tcp://100.96.1.2:"+port)
 
 
 response = ''
