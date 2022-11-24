@@ -6,11 +6,11 @@ import certifi
 
 #El programa recibe la direccion y el puerto
 #ex: 127.0.0.1:8010
-dir =  sys.argv[1]
+port =  sys.argv[1]
 
 context = zmq.Context()
 socket = context.socket(zmq.REP)
-socket.bind("tcp://"+dir)
+socket.bind("tcp://100.96.1.18:"+port)
 
 
 response = ''
