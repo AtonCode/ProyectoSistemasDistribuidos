@@ -4,10 +4,10 @@ import zmq
 
 context = zmq.Context()
 alCliente = context.socket(zmq.REP)
-alCliente.bind("tcp://100.96.1.18::8001")
+alCliente.bind("tcp://100.96.1.18:8001")
 
 workerCheck = context.socket(zmq.REP)
-workerCheck.bind("tcp://100.96.1.18::8000")
+workerCheck.bind("tcp://100.96.1.18:8000")
 
 workers=[]
 
