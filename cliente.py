@@ -5,7 +5,7 @@ from time import time
 
 context = zmq.Context()
 socket = context.socket(zmq.REQ)
-socket.connect("tcp://100.96.1.2:8001")
+socket.connect("tcp://127.0.0.1:8001")
 
 bdclient = db.MongoClient("mongodb://admin:admin@ac-k7prfpv-shard-00-00.x7lltov.mongodb.net:27017,ac-k7prfpv-shard-00-01.x7lltov.mongodb.net:27017,ac-k7prfpv-shard-00-02.x7lltov.mongodb.net:27017/?ssl=true&replicaSet=atlas-zzo4os-shard-0&authSource=admin&retryWrites=true&w=majority", tlsCAFile=certifi.where())
 
